@@ -46,7 +46,7 @@ RUN git clone -b ${YOCTO_PROJECT_NAME} git://git.yoctoproject.org/poky.git && \
     git clone -b ${YOCTO_PROJECT_NAME} git://git.openembedded.org/meta-openembedded && \
     git clone -b ${YOCTO_PROJECT_NAME} git://git.yoctoproject.org/meta-ti && \
     git clone -b ${YOCTO_PROJECT_NAME} https://github.com/crops/meta-beagleboard && \
-    git clone -b ${YOCTO_PROJECT_NAME} https://github.com/yourrepo/meta-hrt # Replace with your repo URL
+    git clone -b ${YOCTO_PROJECT_NAME} https://github.com/atomic-3dpenguin/meta-hrt
 
 # Setup build environment
 RUN cd poky && source oe-init-build-env ${BUILD_DIR} && \
