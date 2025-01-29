@@ -1,0 +1,21 @@
+# hrt Default Build Configuration
+
+MACHINE ?= "beaglebone-yocto"
+
+PACKAGE_CLASSES ?= "package_rpm"
+
+DISTRO_FEATURES:append = " systemd"
+VIRTUAL-RUNTIME_init_manager = "systemd"
+
+EXTRA_IMAGE_FEATURES = "debug-tweaks ssh-server-openssh"
+
+DL_DIR ?= "\${TOPDIR}/downloads"
+SSTATE_DIR ?= "\${TOPDIR}/sstate-cache"
+
+TUNE_FEATURES = "cortexa8"
+CPU_FEATURES_append = " vfp"
+
+BB_NUMBER_THREADS ?= "4"
+PARALLEL_MAKE ?= "-j4"
+
+IMAGE_INSTALL_append = " openssh"
