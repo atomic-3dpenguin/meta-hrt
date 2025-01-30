@@ -1,0 +1,16 @@
+# hrt Default BBLAYERS Configuration
+
+BBPATH = "${TOPDIR}"
+BBFILES ?= ""
+
+BBLAYERS ?= " \
+  ${TOPDIR}/../source/poky/meta \
+  ${TOPDIR}/../source/poky/meta-poky \
+  ${TOPDIR}/../source/poky/meta-yocto-bsp \
+  ${TOPDIR}/../source/meta-openembedded/meta-oe \
+  ${TOPDIR}/../source/meta-openembedded/meta-networking \
+  ${TOPDIR}/../source/meta-openembedded/meta-python \
+  ${TOPDIR}/../source/meta-openembedded/meta-multimedia \
+  ${TOPDIR}/../source/meta-beagleboard/common-bsp \
+  ${TOPDIR}/../source/meta-hrt \
+"

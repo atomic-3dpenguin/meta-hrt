@@ -1,0 +1,4 @@
+Welcome to the Honu Research and Technologies Yocto Build Environment!
+This build environment is configured for the BeagleBone Black and includes necessary layers.
+
+Run 'bitbake core-image-minimal' to start building.

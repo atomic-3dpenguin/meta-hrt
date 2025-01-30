@@ -13,9 +13,9 @@ DL_DIR ?= "\${TOPDIR}/downloads"
 SSTATE_DIR ?= "\${TOPDIR}/sstate-cache"
 
 TUNE_FEATURES = "cortexa8"
-CPU_FEATURES_append = " vfp"
+CPU_FEATURES:append = " vfp"
 
 BB_NUMBER_THREADS ?= "4"
 PARALLEL_MAKE ?= "-j4"
 
-IMAGE_INSTALL_append = " openssh"
+IMAGE_INSTALL:append = " openssh"
